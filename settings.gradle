@@ -1,0 +1,3 @@
+rootProject.name = "YtbSubscribeButton"
+include ':app'
+include ':library'
