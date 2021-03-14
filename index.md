@@ -1,4 +1,4 @@
-# YtbSubscribeButton
+# Youtube Subscribe Button
 [![](https://jitpack.io/v/SWRevo/YtbSubscribeButton.svg)](https://jitpack.io/#SWRevo/YtbSubscribeButton)
 
 Implementation Button Subcribe Youtube with Google API.
