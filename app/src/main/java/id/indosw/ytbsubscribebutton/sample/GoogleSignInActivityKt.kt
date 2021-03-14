@@ -40,7 +40,7 @@ class GoogleSignInActivityKt : AppCompatActivity() {
         val currentUser = mAuth!!.currentUser
         if (currentUser != null) {
             startActivity(
-                Intent(this, YouTubeSubscribeActivity::class.java).putExtra(
+                Intent(this, YouTubeSubscribeKtActivity::class.java).putExtra(
                     USER_EMAIL,
                     currentUser.email
                 )
@@ -96,7 +96,7 @@ class GoogleSignInActivityKt : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
             startActivity(
-                Intent(this, YouTubeSubscribeActivity::class.java).putExtra(
+                Intent(this, YouTubeSubscribeKtActivity::class.java).putExtra(
                     USER_EMAIL,
                     currentUser.email
                 )

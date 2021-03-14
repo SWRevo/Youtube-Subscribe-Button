@@ -1,4 +1,4 @@
-@file:Suppress("DEPRECATION")
+@file:Suppress("DEPRECATION", "SpellCheckingInspection")
 
 package id.indosw.ytbsubscribebutton.sample
 
@@ -46,8 +46,7 @@ class YouTubeSubscribeKtActivity : AppCompatActivity(), YouTubePlayer.OnInitiali
         supportFragment.initialize(youtubeKey, this) // paste your youtube key
         mCredential = GoogleAccountCredential.usingOAuth2(
             applicationContext, listOf(YouTubeScopes.YOUTUBE)
-        )
-            .setBackOff(ExponentialBackOff())
+        ).setBackOff(ExponentialBackOff())
         findViewById<View>(R.id.B_subscribe).setOnClickListener {
             /*FIRST GOTO FOLLOWING LINK AND ENABLE THE YOUTUBE API ACCESS
             https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=YOUR_PROJECT_ID**/
